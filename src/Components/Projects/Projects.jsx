@@ -41,7 +41,7 @@ export const Projects = () => {
     ,{
         link : "http://speak-it-nine.vercel.app",
         name: "SpeakIt",
-        color: "#ffffff",
+        color: "#0d0d0d",
         description: "A simple web based ➡️ platform made with Node.js and MongoDB ✅ that enables you to learn langauges 💬 so that you can communicate easily"
     }, ]
 

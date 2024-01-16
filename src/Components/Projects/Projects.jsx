@@ -17,7 +17,7 @@ export const Projects = () => {
     }, [isInView, mainControls])
 
     const projectData = [{
-        link : "https://github.com/sahil-gpm/OnCode-Frontend",
+        link : "https://oncode.onrender.com",
         name: "Oncode",
         color: "#fb6976",
         description: "Oncode is a online web based coding utility cum community that enables you to store, organize and 🧑‍💻 compile your codes at one place along with a sharable real time compiler 🕐.Also a helpful community of your friends to solve your problems 😌."
@@ -31,6 +31,18 @@ export const Projects = () => {
         name: "Newsfeed",
         color: "#1e3a8a",
         description: "Newsfeed is a API based application made with help of news api to fetch 📰 news according to your notionality 🇮🇳 and personal intersting categories ⌘"
+    }, 
+    ,{
+        link : "https://variable.onrender.com",
+        name: "Variable",
+        color: "#f110af",
+        description: "A simple sharable code editor made with ⚒️ Socket.io and Node.js that allows you and your friends to create code rooms 🤞 and code together sharing and increasing 💪 knowledge"
+    }, 
+    ,{
+        link : "http://speak-it-nine.vercel.app",
+        name: "SpeakIt",
+        color: "#ffffff",
+        description: "A simple web based ➡️ platform made with Node.js and MongoDB ✅ that enables you to learn langauges 💬 so that you can communicate easily"
     }, ]
 
     return (

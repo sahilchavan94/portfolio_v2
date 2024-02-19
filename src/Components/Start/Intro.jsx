@@ -23,7 +23,7 @@ const Intro = () => {
         />
       </div>
       <div
-        className={`flex flex-col mt-40 md:mt-0 lg:flex-row md:justify-center items-center w-[85%] md:w-[90%] lg:w-[70%] mx-auto h-[80vh] md:h-[100vh] gap-6 md:gap-14 headanim ${
+        className={`flex flex-col mt-40 md:mt-0 xl:flex-row md:justify-center items-center w-[85%] md:w-[90%] lg:w-[70%] mx-auto h-[80vh] md:h-[100vh] gap-6 md:gap-14 headanim ${
           introVisible ? "loaded" : ""
         }`}
         ref={myRef}
@@ -38,16 +38,16 @@ const Intro = () => {
           </div>
         </div>
         <div className="right md:bg-trans md:p-0 md:rounded-none md:shadow-none">
-          <div className="heading text-3xl md:text-6xl lg:text-7xl text-white font-bold text-center md:text-center lg:text-start tracking-tight">
+          <div className="heading text-3xl md:text-6xl lg:text-7xl text-white font-bold text-center md:text-center xl:text-start tracking-tight">
             <div className="text-xl text-text_light md:text-3xl opacity-60 mb-4 font-semibold tracking-tight">
-              Hello folks 👋
+            みんなこんにちは 👋
             </div>
             I am Sahil Chavan, a guy passionate for ↴{" "}
             <div>
               <Typing />
             </div>
           </div>
-          <a href="#about">
+          <a href="#about " className="bg-white">
             {" "}
             <button className="text-white btn-grad text-base font-semibold w-40 md:w-48 py-3 md:py-4 mt-7 mx-auto md:mx-0">
               Know me more 

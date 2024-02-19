@@ -90,12 +90,12 @@ const Connect = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ duration: 0.8, delay: 0.35 }}
-            className="w-10 h-10 backdrop-brightness-200  backdrop-contrast-200-200"
+            className="w-10 h-10 backdr  backdrop-contrast-200-200"
             src={fb}
             alt=""
           />
         </Link>
-        <Link target="_blank" to={"https://github.com/sahil-gpm"}>
+        <Link target="_blank" to={"https://github.com/sahil-gpm/portfolio_v2"}>
           <motion.img
             ref={ref}
             variants={{

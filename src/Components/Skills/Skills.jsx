@@ -115,11 +115,11 @@ const Skills = () => {
       animate={mainControls}
       transition={{ duration: 0.8, delay: 0.15 }}
     >
-      <div className="head w-full mx-5 text-start text-4xl md:text-6xl font-bold text-white">
+      <div className="head w-full mx-3 text-start text-4xl md:text-6xl font-bold text-white">
         My Skills
       </div>
 
-      <div className="sub text-base font-normal mt-5 text-text_light opacity-60 mx-5">
+      <div className="sub text-sm md:text-base font-normal mt-5 text-text_light opacity-60 mx-3">
         I present a comprehensive display of my diverse skill set in web and
         mobile development. With expertise spanning across front-end and
         back-end technologies, including HTML, CSS, JavaScript, and various
@@ -132,11 +132,11 @@ const Skills = () => {
         id="skill"
         className="skill-array flex flex-wrap justify-center gap-2 my-10 demo"
       >
-        {skills.map((skill) => {
+        {skills.map((skill,i) => {
           return (
             <motion.div
               
-              className="card w-40 h-40 md:w-[17.5rem] md:h-80 bg-card flex flex-col gap-3 justify-center items-center rounded-md text-sm md:text-xl shadow-md shadow-card overflow-hidden"
+              className="card w-40 h-40 md:w-56 lg:w-[17.5rem] md:h-72 bg-card flex flex-col gap-3 justify-center items-center rounded-md text-sm md:text-xl shadow-md shadow-card overflow-hidden"
             >
               <div className="skillname text-text_light opacity-80 font-semibold text-xs md:text-base">
                 ‣ {skill.skillname}
@@ -169,7 +169,7 @@ const Skills = () => {
                 />
               </div>
 
-              <div className="proficiency text-xl bg-gradient-to-r from-pink via-purple to-card bg-clip-text text-trans md:text-base lg:mt-5 opacity-">
+              <div className="proficiency text-xl bg-gradient-to-r from-pink via-purple to-card bg-clip-text text-trans md:text-base lg:mt-3 opacity-">
                 {skill.proficiency === "Basic"
                   ? "★★★"
                   : skill.proficiency === "Intermediate"

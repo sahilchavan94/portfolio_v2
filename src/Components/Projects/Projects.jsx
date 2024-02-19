@@ -49,9 +49,9 @@ export const Projects = () => {
         { name: "React", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
         { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
-        { name: "Socket.io", color: "rgba(125, 125, 125, 0.1)" }, // Changed to grey
+        { name: "Socket.io", color: "rgba(125, 125, 125, 0.1)" },
         { name: "MongoDB", color: "rgba(77, 179, 61, 0.1)" },
-        { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
+        { name: "Axios", color: "rgba(0, 122, 204, 0.1)" },
       ],
     },
     {
@@ -59,7 +59,7 @@ export const Projects = () => {
       name: "Newsfeed",
       color: "#1e3a8a",
       description:
-        "Newsfeed is a API based application made with help of news api to fetch news according to your notionality and personal intersting categories.",
+        "Newsfeed is a API based application made with help of news api to fetch news according to your nationality and personal intersting categories.",
       img: p3,
       technologies: [
         { name: "React", color: "rgba(97, 218, 251, 0.1)" },
@@ -67,6 +67,7 @@ export const Projects = () => {
         { name: "News API", color: "rgba(255, 105, 31, 0.1)" },
         { name: "Firebase", color: "rgba(255, 226, 10, 0.1)" },
         { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
+        { name: "Axios", color: "rgba(0, 122, 204, 0.1)" },
       ],
     },
     {
@@ -75,7 +76,7 @@ export const Projects = () => {
       color: "#f110af",
       img: p4,
       description:
-        "A simple sharable code editor made with ⚒️ Socket.io and Node.js that allows you and your friends to create code rooms and code together sharing and increasing knowledge.",
+        "A simple sharable code editor made with Socket.io and Node.js that allows you and your friends to create code rooms and code together sharing and increasing knowledge.",
       technologies: [
         { name: "React", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
@@ -83,6 +84,7 @@ export const Projects = () => {
         { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
         { name: "MongoDB", color: "rgba(77, 179, 61, 0.1)" },
         { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
+        { name: "Axios", color: "rgba(0, 122, 204, 0.1)" },
       ],
     },
     {
@@ -91,13 +93,14 @@ export const Projects = () => {
       color: "#1a6ad2",
       img: p5,
       description:
-        "Multi step form that creates your demo account in 3 easy steps. Overall it has a nice UI and user-friendly interactiony.",
+        "Multi step form that creates your demo account in 3 easy steps. Overall it has a nice UI and user-friendly interactions.",
       technologies: [
         { name: "React", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
         { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
         { name: "MongoDB", color: "rgba(77, 179, 61, 0.1)" },
         { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
+        { name: "Axios", color: "rgba(0, 122, 204, 0.1)" },
       ],
     },
     {
@@ -106,19 +109,20 @@ export const Projects = () => {
       color: "#a855f7",
       img: p6,
       description:
-        "A simple web based platform made with Node.js and MongoDB that enables you to learn langauges so that you can communicate easily and conviniently.",
+        "A simple web based platform made with Node.js and MongoDB that enables you to learn langauges so that you can communicate easily and conviniently in several languages.",
       technologies: [
         { name: "React", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
         { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
         { name: "MongoDB", color: "rgba(77, 179, 61, 0.1)" },
         { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
+        { name: "Axios", color: "rgba(0, 122, 204, 0.1)" },
       ],
     },
     {
       link: "https://sneakstore-smoky.vercel.app/",
       name: "Sneakstore",
-      color: "#facc15",
+      color: "#fcc623",
       img: p7,
       description:
         "Product page demo that enables you to sort and filter the products as per your preferences. You can filter the products based on different fields like brand, color, etc.",
@@ -129,7 +133,7 @@ export const Projects = () => {
     },
     {
       link: "https://json-api-peach.vercel.app",
-      name: "JSON API",
+      name: "JsonAPI",
       color: "#7d7d7d",
       img: p8,
       description:
@@ -168,7 +172,7 @@ export const Projects = () => {
           ingenuity behind each project.
         </div>
       </div>
-      <div className="projects flex flex-wrap gap-4 justify-center md:justify-start mt-10">
+      <div className="projects flex flex-wrap gap-3 justify-center md:justify-start mt-10">
         {projectData.map((p) => {
           return (
             <Projectcomponent

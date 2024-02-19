@@ -36,13 +36,15 @@ export const NativeProjects = () => {
     {
       link: "https://github.com/sahil-gpm/flutplay",
       name: "Flutplay",
-      color: "#703d3d",
+      color: "#664441",
       description:
         "A Flutter music player app with a single yet beautiful screen that plays only a  single song for now. However the main focus was to know about the flutter widgets and rendering of UI.",
       img: p10,
       technologies: [
         { name: "Flutter", color: "rgba(255, 102, 102, 0.1)" }, 
-        { name: "Dart", color: "rgba(1, 117, 194, 0.1)" }
+        { name: "Dart", color: "rgba(1, 117, 194, 0.1)" },
+        { name: "Audioplayers", color: "rgba(255, 226, 10, 0.1)" },
+
       ]
     },
     {
@@ -50,12 +52,12 @@ export const NativeProjects = () => {
       name: "Flutter Bloc sneakers",
       color: "#a855f7",
       description:
-        "A Flutter application that focuses on the implementation of bloc state management that enables you to separate the UI and the backend logic making it suitable to understand and maintain.",
+        "A Flutter app that focuses on the implementation of bloc state management that enables you to separate the UI and the backend logic making it easy to understand and maintain.",
       img: p11,
       technologies: [
         { name: "Flutter", color: "rgba(255, 102, 102, 0.1)" }, 
         { name: "Dart", color: "rgba(1, 117, 194, 0.1)" },
-        { name: "Flutter Bloc", color: "rgba(103, 78, 167, 0.1)" }
+        { name: "Flutter Bloc", color: "rgba(103, 78, 167, 0.1)" },
       ]
     },
     {
@@ -64,11 +66,13 @@ export const NativeProjects = () => {
       color: "#fc44cb",
       img: p12,
       description:
-        "A beautiful and user-friendly news app built with flutter that demonstrates the use of flutter_bloc. It helps you to keep your code properly managed and separates the UI, business logic and network logic in three different sections.",
+        "A beautiful and user-friendly news app built with flutter that demonstrates the use of bloc. It helps you to keep your code properly managed and separates the UI, business logic and network logic.",
       technologies: [
         { name: "Flutter", color: "rgba(255, 102, 102, 0.1)" }, 
         { name: "Dart", color: "rgba(1, 117, 194, 0.1)" },
-        { name: "Flutter Bloc", color: "rgba(103, 78, 167, 0.1)" }
+        { name: "Flutter Bloc", color: "rgba(103, 78, 167, 0.1)" },
+        { name: "News API", color: "rgba(255, 105, 31, 0.1)" },
+        { name: "Http", color: "rgba(0, 122, 204, 0.1)" },
       ]
     },
     {
@@ -77,10 +81,12 @@ export const NativeProjects = () => {
       color: "#11998e",
       img: p13,
       description:
-        "A beautiful wallpaper app built with flutter, ( for android ) which fetches wallpaper images from an external image API, and enables the user to select a wallpaper as per the preferred categories and intersts.",
+        "A beautiful wallpaper app built with flutter, which fetches wallpaper images from an external image API, and enables the user to select a wallpaper as per the preferred categories and interests.",
       technologies: [
         { name: "Flutter", color: "rgba(255, 102, 102, 0.1)" }, 
-        { name: "Dart", color: "rgba(1, 117, 194, 0.1)" }
+        { name: "Dart", color: "rgba(1, 117, 194, 0.1)" },
+        { name: "Pexels API", color: "rgba(255, 105, 31, 0.1)" },
+        { name: "Http", color: "rgba(0, 122, 204, 0.1)" },
       ]
     }
   ];
@@ -106,7 +112,7 @@ export const NativeProjects = () => {
           exemplifies my commitment to delivering polished digital solutions
         </div>
       </div>
-      <div className="projects flex flex-wrap gap-4 justify-start items-center mt-10">
+      <div className="projects flex flex-wrap gap-3 justify-start items-center mt-10">
         {projectData.map((p) => {
           return (
             <Projectcomponent

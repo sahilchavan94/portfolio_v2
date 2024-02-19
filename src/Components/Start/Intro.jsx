@@ -39,7 +39,7 @@ const Intro = () => {
         </div>
         <div className="right md:bg-trans md:p-0 md:rounded-none md:shadow-none">
           <div className="heading text-3xl md:text-6xl lg:text-7xl text-white font-bold text-center md:text-center xl:text-start tracking-tight">
-            <div className="text-xl text-text_light md:text-3xl opacity-60 mb-4 font-semibold tracking-tight">
+            <div className="text-xl text-text_light md:text-3xl opacity-70 mb-4 font-normal tracking-tight">
             みんなこんにちは 👋
             </div>
             I am Sahil Chavan, a guy passionate for ↴{" "}

@@ -44,7 +44,7 @@ const Connect = () => {
       <div className="connections text-text_light text-xs md:text-sm flex md:flex-row items-center flex-col justify-center gap-4 mt-4">
         <Link to={"mailto:sahilchavangithub@gmail.com"}>
           <div
-            className="email rounded-lg bg-card w-72 h-44 flex flex-col gap-3 justify-center items-center mt-5 transition-all duration-500 hover:bg-gradient-to-br from-pink via-purple to-card"
+            className="email rounded-lg bg-card w-72 h-44 flex flex-col gap-3 justify-center items-center mt-5 transition-all duration-500 hover:bg-gradient-to-tr from-pink via-purple to-card opacity-80"
             ref={cardRef}
             variants={{
               hidden: { opacity: 0, x: 50 },
@@ -60,7 +60,7 @@ const Connect = () => {
 
         <Link to={"tel:9922341223"}>
           <div
-            className="contact rounded-lg bg-card w-72 h-44 flex flex-col gap-3 justify-center items-center mt-5 transition-all duration-1000 hover:bg-gradient-to-br from-pink via-purple to-card"
+            className="contact rounded-lg bg-card w-72 h-44 flex flex-col gap-3 justify-center items-center mt-5 transition-all duration-1000 hover:bg-gradient-to-tr from-pink via-purple to-card opacity-80"
             ref={cardRef}
             variants={{
               hidden: { opacity: 0, x: -50 },

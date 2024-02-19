@@ -27,7 +27,7 @@ const Connect = () => {
 
   return (
     <motion.div
-      className="connect mt-56 mb-20 w-full md:w-[65%] mx-auto text-start"
+      className="connect mt-64 mb-20 w-full md:w-[65%] mx-auto text-start"
       ref={ref}
       variants={{
         hidden: { opacity: 0, y: 75 },

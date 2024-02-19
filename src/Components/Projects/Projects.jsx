@@ -33,6 +33,7 @@ export const Projects = () => {
       technologies: [
         { name: "React", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
+        { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
         { name: "Socket.io", color: "rgba(125, 125, 125, 0.1)" },
         { name: "Firebase", color: "rgba(255, 226, 10, 0.1)" },
         { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },

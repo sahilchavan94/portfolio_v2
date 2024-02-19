@@ -24,7 +24,7 @@ const Projectcomponent = ({name,description,color,link,img,technologies}) => {
           </div>
         })}
       </div> 
-     <Link target='_blank' to={link}><button style={{color:"#ffffff",marginTop:"3.4rem"}} className='px-10 py-[.5rem] rounded-md opacity-50 hover:opacity-100 bg-gradient-to-r bg-black transition-all text-sm duration-1000'>View project</button></Link>
+     <Link target='_blank' to={link}><button style={{color:"#ffffff",marginTop:"4rem"}} className='px-10 py-[.5rem] rounded-md opacity-50 hover:opacity-100 bg-gradient-to-r bg-black transition-all text-sm duration-1000'>View project</button></Link>
     </div>
   )
 }

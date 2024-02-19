@@ -85,7 +85,6 @@ export const Projects = () => {
         { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
         { name: "MongoDB", color: "rgba(77, 179, 61, 0.1)" },
         { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
-        { name: "Axios", color: "rgba(0, 122, 204, 0.1)" },
       ],
     },
     {

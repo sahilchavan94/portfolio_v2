@@ -48,7 +48,7 @@ const Connect = () => {
                 </div>
             </div>
             
-            <div className='mx-auto flex justify-center items-center mt-14 gap-5 opacity-90 transition-all duration-700 hover:opacity-100' >
+            <div className='mx-auto flex justify-center items-center mt-14 gap-5 ' >
                <Link target='_blank' to={"https://www.facebook.com/profile.php?id=61554470909104"}> <motion.img ref={ref}
                     variants={{
                         hidden: { opacity: 0, y: 75 },

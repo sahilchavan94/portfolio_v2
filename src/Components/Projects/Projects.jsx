@@ -106,7 +106,7 @@ export const Projects = () => {
       color: "#a855f7",
       img: p6,
       description:
-        "A simple web based ➡️ platform made with Node.js and MongoDB that enables you to learn langauges so that you can communicate easily and conviniently.",
+        "A simple web based platform made with Node.js and MongoDB that enables you to learn langauges so that you can communicate easily and conviniently.",
       technologies: [
         { name: "React", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },

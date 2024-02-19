@@ -10,7 +10,7 @@ const Intro = () => {
 
   return (
     <>
-      <div className="images w-[25rem] lg:w-[50rem] relative top-[40rem] bg-white -left-2 md:left-36 opacity-50">
+      <div className="images w-[25rem] lg:w-[44rem] relative top-[40rem] bg-white -left-2 md:left-16 lg:opacity-50 opacity-70">
         <img
           src={blob1}
           alt=""
@@ -29,7 +29,7 @@ const Intro = () => {
         ref={myRef}
       >
         <div className="left">
-          <div className="left_image bg-gradient-to-br from-pink via-purple to-card w-56 md:w-64 h-56 md:h-64 lg:w-96 lg:h-96 p-1 rounded-full shadow-2xl">
+          <div className="left_image bg-gradient-to-br from-pink via-purple to-card w-56 md:w-52 h-56 md:h-64 lg:w-80 lg:h-80 p-1 rounded-full shadow-2xl">
             <img
               src={demo}
               className="w-full h-full rounded-full object-cover glowing-image"
@@ -39,7 +39,7 @@ const Intro = () => {
         </div>
         <div className="right md:bg-trans md:p-0 md:rounded-none md:shadow-none">
           <div className="heading text-3xl md:text-6xl lg:text-7xl text-white font-bold text-center md:text-center lg:text-start tracking-tight">
-            <div className="text-xl text-text_light md:text-3xl tracking-normal mb-6 font-normal">
+            <div className="text-xl text-text_light md:text-3xl opacity-60 mb-4 font-semibold tracking-tight">
               Hello folks 👋
             </div>
             I am Sahil Chavan, a guy passionate for ↴{" "}
@@ -49,8 +49,8 @@ const Intro = () => {
           </div>
           <a href="#about">
             {" "}
-            <button className="text-white btn-grad text-sm font-semibold w-40 md:w-48 md:py-5 py-4 mt-10 mx-auto md:mx-0">
-              Know me more ⬇
+            <button className="text-white btn-grad text-base font-semibold w-40 md:w-48 py-3 md:py-4 mt-7 mx-auto md:mx-0">
+              Know me more 
             </button>
           </a>
         </div>

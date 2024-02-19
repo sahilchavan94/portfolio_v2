@@ -136,10 +136,10 @@ const Skills = () => {
           return (
             <motion.div
               
-              className="card w-36 h-36 md:w-[20.5rem] md:h-72 bg-card flex flex-col gap-3 justify-center items-center rounded-md text-sm md:text-xl shadow-md shadow-card overflow-hidden"
+              className="card w-40 h-40 md:w-[17.5rem] md:h-80 bg-card flex flex-col gap-3 justify-center items-center rounded-md text-sm md:text-xl shadow-md shadow-card overflow-hidden"
             >
-              <div className="skillname text-white font-semibold text-xs md:text-base">
-                <span className="text-xs">✔︎</span> {skill.skillname}
+              <div className="skillname text-text_light opacity-80 font-semibold text-xs md:text-base">
+                ‣ {skill.skillname}
               </div>
 
               <div className="w-14 h-14 lg:w-24 lg:h-24">
@@ -169,7 +169,7 @@ const Skills = () => {
                 />
               </div>
 
-              <div className="proficiency text-xl bg-gradient-to-r from-pink via-purple to-card bg-clip-text text-trans md:text-base mt-1 lg:mt-5 opacity-">
+              <div className="proficiency text-xl bg-gradient-to-r from-pink via-purple to-card bg-clip-text text-trans md:text-base lg:mt-5 opacity-">
                 {skill.proficiency === "Basic"
                   ? "★★★"
                   : skill.proficiency === "Intermediate"

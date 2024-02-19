@@ -21,50 +21,70 @@ export const NativeProjects = () => {
 
   const projectData = [
     {
-      link: "https://oncode.onrender.com",
+      link: "https://github.com/sahil-gpm/dockIt",
       name: "DockIt",
       color: "#7d7d7d",
       description:
         "A daily task planner for your routine, made with Flutter. It has a nice and easy to operate user interface that enables you to add, delete and mark your tasks as complete and incomplete.",
-      img: p9
+      img: p9,
+      technologies: [
+        { name: "Flutter", color: "rgba(255, 102, 102, 0.1)" }, 
+        { name: "Dart", color: "rgba(1, 117, 194, 0.1)" },
+        { name: "Hive DB", color: "rgba(146, 85, 247, 0.1)" }
+      ]
     },
     {
-      link: "https://github.com/sahil-gpm/chatrooms",
+      link: "https://github.com/sahil-gpm/flutplay",
       name: "Flutplay",
       color: "#703d3d",
       description:
         "A Flutter music player app with a single yet beautiful screen that plays only a  single song for now. However the main focus was to know about the flutter widgets and rendering of UI.",
       img: p10,
+      technologies: [
+        { name: "Flutter", color: "rgba(255, 102, 102, 0.1)" }, 
+        { name: "Dart", color: "rgba(1, 117, 194, 0.1)" }
+      ]
     },
     {
-      link: "https://github.com/sahil-gpm/newsfeed",
+      link: "https://github.com/sahil-gpm/flutter_bloc_shopping_cart",
       name: "Flutter Bloc sneakers",
       color: "#a855f7",
       description:
         "A Flutter application that focuses on the implementation of bloc state management that enables you to separate the UI and the backend logic making it suitable to understand and maintain.",
       img: p11,
+      technologies: [
+        { name: "Flutter", color: "rgba(255, 102, 102, 0.1)" }, 
+        { name: "Dart", color: "rgba(1, 117, 194, 0.1)" },
+        { name: "Flutter Bloc", color: "rgba(103, 78, 167, 0.1)" }
+      ]
     },
-    ,
     {
-      link: "https://variable.onrender.com",
+      link: "https://github.com/sahil-gpm/flutter_bloc_news_app",
       name: "Flutter Bloc News",
       color: "#fc44cb",
       img: p12,
       description:
         "A beautiful and user-friendly news app built with flutter that demonstrates the use of flutter_bloc. It helps you to keep your code properly managed and separates the UI, business logic and network logic in three different sections.",
+      technologies: [
+        { name: "Flutter", color: "rgba(255, 102, 102, 0.1)" }, 
+        { name: "Dart", color: "rgba(1, 117, 194, 0.1)" },
+        { name: "Flutter Bloc", color: "rgba(103, 78, 167, 0.1)" }
+      ]
     },
-
-    ,
     {
-      link: "https://multistep-form-eta.vercel.app",
+      link: "https://github.com/sahil-gpm/flutter_wallpapers",
       name: "Flutter Wallpapers",
       color: "#11998e",
       img: p13,
       description:
         "A beautiful wallpaper app built with flutter, ( for android ) which fetches wallpaper images from an external image API, and enables the user to select a wallpaper as per the preferred categories and intersts.",
-    },
+      technologies: [
+        { name: "Flutter", color: "rgba(255, 102, 102, 0.1)" }, 
+        { name: "Dart", color: "rgba(1, 117, 194, 0.1)" }
+      ]
+    }
   ];
-
+  
   return (
     <motion.div
       className="mt-36 w-[90%] md:w-[80%] mx-auto text-center overflow-x-hidden"
@@ -86,7 +106,7 @@ export const NativeProjects = () => {
           exemplifies my commitment to delivering polished digital solutions
         </div>
       </div>
-      <div className="projects flex flex-wrap gap-4 justify-center items-center mt-10">
+      <div className="projects flex flex-wrap gap-4 justify-start items-center mt-10">
         {projectData.map((p) => {
           return (
             <Projectcomponent
@@ -95,6 +115,7 @@ export const NativeProjects = () => {
               description={p.description}
               link={p.link}
               img={p.img}
+              technologies={p.technologies}
             />
           );
         })}

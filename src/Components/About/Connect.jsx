@@ -26,7 +26,7 @@ const Connect = () => {
     }, [isInView, mainControls, isInView2, cardControls])
 
     return (
-        <motion.div className="connect mt-40 mb-20 w-[65%] mx-auto text-start"
+        <motion.div className="connect mt-56 mb-20 w-full md:w-[65%] mx-auto text-start"
             ref={ref}
             variants={{
                 hidden: { opacity: 0, y: 75 },
@@ -35,20 +35,20 @@ const Connect = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ duration: 0.8, delay: 0.25 }}>
-            <div className="head text-4xl md:text-6xl font-bold text-white text-center">
-                Get Connected
+            <div className="head text-3xl md:text-6xl font-bold text-white text-center">
+                Get Connected ▹
             </div>
 
             <div className="connections text-text_light text-xs md:text-sm flex md:flex-row items-center flex-col justify-center gap-4 mt-4">
-                <motion.div className="email rounded-lg bg-card w-72 h-44 flex flex-col gap-3 justify-center items-center mt-5" ref={cardRef} variants={{ hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0 } }} initial="hidden" animate={cardControls} transition={{ duration: 0.6, delay: 0.25 }}>
+                <div className="email rounded-lg bg-card w-72 h-44 flex flex-col gap-3 justify-center items-center mt-5 transition-all duration-500 hover:bg-gradient-to-br from-pink via-purple to-card" ref={cardRef} variants={{ hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0 } }} initial="hidden" animate={cardControls} transition={{ duration: 0.6, delay: 0.25 }}>
                     <div className='text-3xl'>@</div> sahilchavangithub@gmail.com
-                </motion.div>
-                <motion.div className="contact rounded-lg bg-card w-72 h-44 flex flex-col gap-3 justify-center items-center mt-5" ref={cardRef} variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }} initial="hidden" animate={cardControls} transition={{ duration: 0.6, delay: 0.25 }}>
+                </div>
+                <div className="contact rounded-lg bg-card w-72 h-44 flex flex-col gap-3 justify-center items-center mt-5 hover:bg-gradient-to-br from-pink via-purple to-card" ref={cardRef} variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }} initial="hidden" animate={cardControls} transition={{ duration: 0.6, delay: 0.25 }}>
                    <img src={phone} className='w-7 h-7' alt="" /> +91 9922 341 223
-                </motion.div>
+                </div>
             </div>
             
-            <div className='mx-auto flex justify-center items-center mt-14 gap-5' >
+            <div className='mx-auto flex justify-center items-center mt-14 gap-5 opacity-90 transition-all duration-700 hover:opacity-100' >
                <Link target='_blank' to={"https://www.facebook.com/profile.php?id=61554470909104"}> <motion.img ref={ref}
                     variants={{
                         hidden: { opacity: 0, y: 75 },

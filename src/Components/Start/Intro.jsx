@@ -10,7 +10,7 @@ const Intro = () => {
 
   return (
     <>
-      <div className="images w-[25rem] lg:w-[50rem] relative top-[40rem] bg-white left-36">
+      <div className="images w-[25rem] lg:w-[50rem] relative top-[40rem] bg-white -left-2 md:left-36 opacity-50">
         <img
           src={blob1}
           alt=""

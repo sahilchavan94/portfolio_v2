@@ -3,7 +3,7 @@ import Home from './Components/Start/Home';
 
 function App() {
   return (
-    <div>
+    <div className='bg-black'>
       <BrowserRouter>
           <Routes>
             <Route path='/' Component={Home}/>

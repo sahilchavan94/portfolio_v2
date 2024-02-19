@@ -4,15 +4,17 @@ import About from '../About/About'
 import Skills from '../Skills/Skills'
 import Projects from '../Projects/Projects'
 import Connect from '../About/Connect'
+import NativeProjects from '../Projects/Nativeprojects'
 
 
 const Home = () => {
   return (
-    <div className='h-[300vh] overflow-x-hidden scroll-smooth'>
+    <div className='overflow-x-hidden scroll-smooth'>
       <Intro/>
       <About/>
       <Skills/> 
       <Projects/> 
+      <NativeProjects/>
       <Connect/> 
     </div>
   )

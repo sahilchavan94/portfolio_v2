@@ -1,0 +1,106 @@
+import React, { useRef, useEffect } from "react";
+import Projectcomponent from "./Projectcomponent";
+import { motion, useAnimation, useInView } from "framer-motion";
+import p9 from "../assets/projects/p9.png";
+import p10 from "../assets/projects/p10.png";
+import p11 from "../assets/projects/p11.png";
+import p12 from "../assets/projects/p12.png";
+import p13 from "../assets/projects/p13.png";
+
+export const NativeProjects = () => {
+  const ref = useRef(null);
+  const mainControls = useAnimation();
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+      return;
+    }
+  }, [isInView, mainControls]);
+
+  const projectData = [
+    {
+      link: "https://oncode.onrender.com",
+      name: "DockIt",
+      color: "#7d7d7d",
+      description:
+        "A daily task planner for your routine, made with Flutter. It has a nice and easy to operate user interface that enables you to add, delete and mark your tasks as complete and incomplete.",
+      img: p9
+    },
+    {
+      link: "https://github.com/sahil-gpm/chatrooms",
+      name: "Flutplay",
+      color: "#703d3d",
+      description:
+        "A Flutter music player app with a single yet beautiful screen that plays only a  single song for now. However the main focus was to know about the flutter widgets and rendering of UI.",
+      img: p10,
+    },
+    {
+      link: "https://github.com/sahil-gpm/newsfeed",
+      name: "Flutter Bloc sneakers",
+      color: "#a855f7",
+      description:
+        "A Flutter application that focuses on the implementation of bloc state management that enables you to separate the UI and the backend logic making it suitable to understand and maintain.",
+      img: p11,
+    },
+    ,
+    {
+      link: "https://variable.onrender.com",
+      name: "Flutter Bloc News",
+      color: "#fc44cb",
+      img: p12,
+      description:
+        "A beautiful and user-friendly news app built with flutter that demonstrates the use of flutter_bloc. It helps you to keep your code properly managed and separates the UI, business logic and network logic in three different sections.",
+    },
+
+    ,
+    {
+      link: "https://multistep-form-eta.vercel.app",
+      name: "Flutter Wallpapers",
+      color: "#11998e",
+      img: p13,
+      description:
+        "A beautiful wallpaper app built with flutter, ( for android ) which fetches wallpaper images from an external image API, and enables the user to select a wallpaper as per the preferred categories and intersts.",
+    },
+  ];
+
+  return (
+    <motion.div
+      className="mt-36 w-[90%] md:w-[80%] mx-auto text-center overflow-x-hidden"
+      ref={ref}
+      variants={{
+        hidden: { opacity: 0, y: 75 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial="hidden"
+      animate={mainControls}
+      transition={{ duration: 0.8, delay: 0.25 }}
+    >
+      <div className="head w-full mx-auto text-4xl md:text-6xl font-bold text-white text-start px-5 mt-24">
+        Native Projects ⚒️
+        <div className="sub md:text-base text-sm font-normal mt-5 text-text_light opacity-60">
+          I showcase my proficiency in Flutter app development through a curated
+          assortment of projects. With a primary emphasis on crafting intuitive
+          user interfaces and ensuring cross-platform compatibility, each app
+          exemplifies my commitment to delivering polished digital solutions
+        </div>
+      </div>
+      <div className="projects flex flex-wrap gap-4 justify-center items-center mt-10">
+        {projectData.map((p) => {
+          return (
+            <Projectcomponent
+              name={p.name}
+              color={p.color}
+              description={p.description}
+              link={p.link}
+              img={p.img}
+            />
+          );
+        })}
+      </div>
+    </motion.div>
+  );
+};
+
+export default NativeProjects;

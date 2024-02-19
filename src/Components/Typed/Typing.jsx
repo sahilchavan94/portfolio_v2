@@ -20,7 +20,7 @@ function Typing() {
     }, []);
 
     return (
-        <span className='text-main' ref={el}></span>
+        <span className='bg-gradient-to-r from-pink via-purple to-card text-trans bg-clip-text' ref={el}></span>
     );
 }
 

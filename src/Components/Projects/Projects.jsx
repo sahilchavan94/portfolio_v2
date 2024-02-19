@@ -1,77 +1,131 @@
-import React, { useRef, useEffect } from 'react'
-import Projectcomponent from './Projectcomponent'
-import { motion, useAnimation, useInView } from 'framer-motion'
+import React, { useRef, useEffect } from "react";
+import Projectcomponent from "./Projectcomponent";
+import { motion, useAnimation, useInView } from "framer-motion";
+import p1 from '../assets/projects/p1.png'
+import p2 from '../assets/projects/p2.png'
+import p3 from '../assets/projects/p3.png'
+import p4 from '../assets/projects/p4.png'
+import p5 from '../assets/projects/p5.png'
+import p6 from '../assets/projects/p6.png'
+import p7 from '../assets/projects/p7.png'
+import p8 from '../assets/projects/p8.png'
 
 export const Projects = () => {
+  const ref = useRef(null);
+  const mainControls = useAnimation();
+  const isInView = useInView(ref, { once: true });
 
-    const ref = useRef(null)
-    const mainControls = useAnimation()
-    const isInView = useInView(ref,{once:true})
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+      return;
+    }
+  }, [isInView, mainControls]);
+
+  const projectData = [
+    {
+      link: "https://oncode.onrender.com",
+      name: "Oncode",
+      color: "#fb6976",
+      description:
+        "Oncode is a online web based coding utility cum community that enables you to store, organize and 🧑‍💻 compile your codes at one place along with real time compiler.",
+      img:p1
+    },
+    {
+      link: "https://github.com/sahil-gpm/chatrooms",
+      name: "Chatrooms",
+      color: "#4ade80",
+      description:
+        "Chatrooms is full stack mern app the allows you to create rooms of your personal interests using socket.io and connect with strangers, initiate conversations and make friends.",
+      img:p2
+    },
+    {
+      link: "https://github.com/sahil-gpm/newsfeed",
+      name: "Newsfeed",
+      color: "#1e3a8a",
+      description:
+        "Newsfeed is a API based application made with help of news api to fetch news according to your notionality and personal intersting categories.",
+        img:p3
+    },
+    ,
+    {
+      link: "https://variable.onrender.com",
+      name: "Variable",
+      color: "#f110af",
+      img:p4,
+      description:
+        "A simple sharable code editor made with ⚒️ Socket.io and Node.js that allows you and your friends to create code rooms and code together sharing and increasing knowledge.",
+    },
+
+    ,
+    {
+      link: "https://multistep-form-eta.vercel.app",
+      name: "Multistep Form",
+      color: "#1a6ad2",
+      img:p5,
+      description:
+        "Multi step form that creates your demo account in 3 easy steps. Overall it has a nice UI and user-friendly interactiony.",
+    },
+    {
+      link: "http://speak-it-nine.vercel.app",
+      name: "SpeakIt",
+      color: "#a855f7",
+      img:p6,
+      description:
+        "A simple web based ➡️ platform made with Node.js and MongoDB that enables you to learn langauges so that you can communicate easily and conviniently.",
+    },
+    {
+      link: "https://sneakstore-smoky.vercel.app/",
+      name: "Sneakstore",
+      color: "#facc15",
+      img:p7,
+      description:
+        "Product page demo that enables you to sort and filter the products as per your preferences. You can filter the products based on different fields like brand, color, etc.",
+    },
+    {
+      link: "https://sneakstore-smoky.vercel.app/",
+      name: "JSON API",
+      color: "#7d7d7d",
+      img:p8,
+      description:
+        "Simple page representing data fetching through an api with axios get request, it demonstrate the fetching of json and mapping the json array when the data is loaded.",
+    },
+  ];
 
 
-    useEffect(() => {
-        if (isInView) {
-            mainControls.start("visible")
-            return
-        }
-    }, [isInView, mainControls])
+  return (
+    <motion.div
+      className="mt-24 w-[90%] md:w-[80%] mx-auto text-center overflow-x-hidden."
+      ref={ref}
+      variants={{
+        hidden: { opacity: 0, y: 75 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial="hidden"
+      animate={mainControls}
+      transition={{ duration: 0.8, delay: 0.25 }}
+    >
+      <div className="head w-full mx-auto text-4xl md:text-6xl font-bold text-white text-start px-5">
+        Web Projects ⚒️ 
+        <div className="sub md:text-base text-sm font-normal mt-5 text-text_light opacity-60">
+        I present a showcase of my passion for web development through a collection of innovative projects. With a keen eye for design and a commitment to functionality, each creation embodies my dedication to crafting immersive digital experiences. From responsive layouts to seamless user interfaces, I strive to push the boundaries of creativity and technology. Explore my work and witness the synergy between aesthetics and usability that defines my approach to web development. Let's embark on a journey through the artistry and ingenuity behind each project.
+        </div>
+      </div>
+      <div className="projects flex flex-wrap gap-4 justify-center mt-10">
+        {projectData.map((p) => {
+          return (
+            <Projectcomponent
+              name={p.name}
+              color={p.color}
+              description={p.description}
+              link={p.link}
+              img={p.img}
+            />
+          );
+        })}
+      </div>
+    </motion.div>
+  );
+};
 
-    const projectData = [{
-        link : "https://oncode.onrender.com",
-        name: "Oncode",
-        color: "#fb6976",
-        description: "Oncode is a online web based coding utility cum community that enables you to store, organize and 🧑‍💻 compile your codes at one place along with a sharable real time compiler 🕐.Also a helpful community of your friends to solve your problems 😌."
-    },{
-        link : "https://github.com/sahil-gpm/chatrooms",
-        name: "Chatrooms",
-        color: "#4ade80",
-        description: "Chatrooms is full stack mern app 💚 the allows you to create rooms of your personal interests using socket.io and connect with strangers 😌, initiate conversations and make friends 🤞"
-    },{
-        link : "https://github.com/sahil-gpm/newsfeed",
-        name: "Newsfeed",
-        color: "#1e3a8a",
-        description: "Newsfeed is a API based application made with help of news api to fetch 📰 news according to your notionality 🇮🇳 and personal intersting categories ⌘"
-    }, 
-    ,{
-        link : "https://variable.onrender.com",
-        name: "Variable",
-        color: "#f110af",
-        description: "A simple sharable code editor made with ⚒️ Socket.io and Node.js that allows you and your friends to create code rooms 🤞 and code together sharing and increasing 💪 knowledge"
-    }, 
-    ,{
-        link : "http://speak-it-nine.vercel.app",
-        name: "SpeakIt",
-        color: "#0d0d0d",
-        description: "A simple web based ➡️ platform made with Node.js and MongoDB ✅ that enables you to learn langauges 💬 so that you can communicate easily"
-    }, ]
-
-    return (
-        <motion.div className='mt-36 w-[90%] md:w-[90%] mx-auto text-center overflow-x-hidden'
-            ref={ref}
-            variants={{
-                hidden: { opacity: 0, y: 75 },
-                visible: { opacity: 1, y: 0 }
-            }}
-            initial="hidden"
-            animate={mainControls}
-            transition={{ duration: 0.8, delay: 0.25 }}>
-            <div className="head text-4xl md:text-6xl font-bold text-white">
-                Projects ⚒️ ↴
-                <div className="sub text-white text-base font-normal mt-5">
-                    These are some of my major projects ↦
-                </div>
-            </div>
-            <div className="projects flex flex-wrap gap-4 justify-center mt-10">
-                {projectData.map((p) => {
-                    return (
-                        <Projectcomponent name={p.name} color={p.color} description={p.description} link={p.link} />
-                    )
-                })}
-            </div>
-
-            
-        </motion.div>
-    )
-}
-
-export default Projects
+export default Projects;

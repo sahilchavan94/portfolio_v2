@@ -158,7 +158,7 @@ export const Projects = () => {
       animate={mainControls}
       transition={{ duration: 0.8, delay: 0.25 }}
     >
-      <div className="head w-full mx-auto text-4xl md:text-6xl font-bold text-white text-start md:px-5">
+      <div className="head w-full mx-auto text-4xl md:text-6xl font-bold text-white text-start md:px-5 px-3">
         Web Projects ⚒️
         <div className="sub md:text-base text-sm font-normal mt-5 text-text_light opacity-60">
           I present a showcase of my passion for web development through a

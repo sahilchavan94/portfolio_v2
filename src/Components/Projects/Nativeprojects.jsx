@@ -112,7 +112,7 @@ export const NativeProjects = () => {
           exemplifies my commitment to delivering polished digital solutions
         </div>
       </div>
-      <div className="projects flex flex-wrap gap-3 justify-center items-center mt-10">
+      <div className="projects flex flex-wrap gap-3 justify-center md:justify-start items-center mt-10">
         {projectData.map((p) => {
           return (
             <Projectcomponent

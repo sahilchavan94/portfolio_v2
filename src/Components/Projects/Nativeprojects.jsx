@@ -103,7 +103,7 @@ export const NativeProjects = () => {
       animate={mainControls}
       transition={{ duration: 0.8, delay: 0.25 }}
     >
-      <div className="head w-full mx-auto text-4xl md:text-6xl font-bold text-white text-start px-5 mt-24">
+      <div className="head w-full mx-auto text-4xl md:text-6xl font-bold text-white text-start md:px-5 mt-24">
         Native Projects ⚒️
         <div className="sub md:text-base text-sm font-normal mt-5 text-text_light opacity-60">
           I showcase my proficiency in Flutter app development through a curated

@@ -39,7 +39,7 @@ const Education = () => {
             title={"K.E.S V.P.T English Medium School Roha"}
             subTitle={"Maharashtra State Board"}
             desc={
-              "Completed my 10th with 99% from Konkan Education Society's Venna Pandit Tendulkar' English Medium School Roha Raigad."
+              "Completed my 10th with 99% from Konkan Education Society's Veena Pandit Tendulkar' English Medium School Roha Raigad."
             }
           />
           <EducationComp

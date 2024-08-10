@@ -58,7 +58,7 @@ export const Projects = () => {
       name: "Newsfeed",
       color: "#1e3a8a",
       description:
-        "Newsfeed is a API based application made with help of news api to fetch news according to your nationality and personal intersting categories.",
+        "Newsfeed is a API based application made with help of news api to fetch news according to your nationality and personal interested categories.",
       img: p3,
       technologies: [
         { name: "React", color: "rgba(97, 218, 251, 0.1)" },

@@ -106,7 +106,7 @@ export const NativeProjects = () => {
       ],
     },
     {
-      link: "https://github.com/sahilchavan94/flutter_clean_architecture_blog_app",
+      link: "https://github.com/sahilchavan94/Chattin.",
       name: "Chattin`",
       color: "#128DFF",
       img: p15,

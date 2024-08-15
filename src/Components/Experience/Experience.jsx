@@ -47,34 +47,22 @@ const Exp = () => {
           </div>
 
           <div className="internship-description text-text_dark text-sm font-normal mt-4 md:w-[85%] w-full">
-            <ul className="list-disc ">
-              <li>
-                Had an immersive experience that significantly enhanced my
-                Flutter development skills during a 3-month online internship.
-              </li>
-              <li>
-                Delved deep into{" "}
-                <span className="text-main font-semibold opacity-100">
-                  Clean architecture
-                </span>{" "}
-                and mastered the principles of building scalable and
-                maintainable applications.
-              </li>
-              <li>
-                <span className="text-green font-semibold opacity-100">
-                  Mastered state management
-                </span>{" "}
-                by working on real-world projects, refining my ability to manage
-                complex app states efficiently.
-              </li>
-              <li>
-                Collaborated with a dynamic team in a remote work environment,
-                honing my teamwork and communication skills.
-              </li>
-              <li>
-                This internship was a pivotal step in my growth as a developer.
-              </li>
-            </ul>
+            Had an immersive experience that significantly enhanced my Flutter
+            development skills during a 3-month online internship. Delved deep
+            into{" "}
+            <span className="text-main font-semibold opacity-100">
+              Clean architecture
+            </span>{" "}
+            and mastered the principles of building scalable and maintainable
+            applications.
+            <span className="text-green font-semibold opacity-100">
+              Mastered state management
+            </span>{" "}
+            by working on real-world projects, refining my ability to manage
+            complex app states efficiently. Collaborated with a dynamic team in
+            a remote work environment, honing my teamwork and communication
+            skills. This internship was a pivotal step in my growth as a
+            developer.
           </div>
         </div>
       </div>

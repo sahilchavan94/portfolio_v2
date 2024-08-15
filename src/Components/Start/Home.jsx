@@ -49,7 +49,7 @@ const Home = () => {
         {!isSidebarOpen ? (
           <div className="fixed flex items-center justify-between w-full h-10 top-0 z-50 bg-black border border-b-card shadow-card px-4">
             <div className="text-2xl font-semibold bg-gradient-to-r from-pink via-purple to-indigo text-trans bg-clip-text">
-              SahiL.
+              Sahil.
             </div>
             <button className="ml-5" onClick={() => setIsSidebarOpen(true)}>
               {/* Add a burger menu icon here */}

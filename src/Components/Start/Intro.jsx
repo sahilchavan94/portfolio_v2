@@ -14,12 +14,12 @@ const Intro = () => {
         <img
           src={blob1}
           alt=""
-          className="opacity-20 absolute -left-6 md:left-10 -top-[26rem] md:top-44 bg-trans"
+          className="opacity-10 md:opacity-20 absolute -left-6 md:left-10 -top-[26rem] md:top-44 bg-trans"
         />
         <img
           src={blob2}
           alt=""
-          className="opacity-40 absolute -right-[11%] md:-right-[80%] top-0 md:top-[40rem]"
+          className="opacity-40 absolute -right-[35%] md:-right-[90%] top-0 md:top-[40rem]"
         />
       </div>
       <div

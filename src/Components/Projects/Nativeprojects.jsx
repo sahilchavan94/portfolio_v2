@@ -124,7 +124,7 @@ export const NativeProjects = () => {
 
   return (
     <motion.div
-      className="mt-24 w-[90%] md:w-[80%] mx-auto text-center overflow-x-hidden"
+      className="mt-20 w-[90%] md:w-[80%] mx-auto text-center overflow-x-hidden"
       ref={ref}
       variants={{
         hidden: { opacity: 0, y: 75 },

@@ -29,7 +29,7 @@ export const Projects = () => {
         "Oncode is a online web based coding utility cum community that enables you to store, organize and compile your codes at one place along with real time compiler.",
       img: p1,
       technologies: [
-        { name: "React", color: "rgba(97, 218, 251, 0.1)" },
+        { name: "React.js", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
         { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
         { name: "Socket.io", color: "rgba(125, 125, 125, 0.1)" },
@@ -45,7 +45,7 @@ export const Projects = () => {
         "Chatrooms is full stack mern app the allows you to create rooms of your personal interests using socket.io and connect with strangers, initiate conversations and make friends.",
       img: p2,
       technologies: [
-        { name: "React", color: "rgba(97, 218, 251, 0.1)" },
+        { name: "React.js", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
         { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
         { name: "Socket.io", color: "rgba(125, 125, 125, 0.1)" },
@@ -61,7 +61,7 @@ export const Projects = () => {
         "Newsfeed is a API based application made with help of news api to fetch news according to your nationality and personal interested categories.",
       img: p3,
       technologies: [
-        { name: "React", color: "rgba(97, 218, 251, 0.1)" },
+        { name: "React.js", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
         { name: "News API", color: "rgba(255, 105, 31, 0.1)" },
         { name: "Firebase", color: "rgba(255, 226, 10, 0.1)" },
@@ -77,7 +77,7 @@ export const Projects = () => {
       description:
         "A simple sharable code editor made with Socket.io and Node.js that allows you and your friends to create code rooms and code together sharing and increasing knowledge.",
       technologies: [
-        { name: "React", color: "rgba(97, 218, 251, 0.1)" },
+        { name: "React.js", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
         { name: "Socket.io", color: "rgba(125, 125, 125, 0.1)" },
         { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
@@ -94,7 +94,7 @@ export const Projects = () => {
     //   description:
     //     "Multi step form that creates your demo account in 3 easy steps. Overall it has a nice UI and user-friendly interactions.",
     //   technologies: [
-    //     { name: "React", color: "rgba(97, 218, 251, 0.1)" },
+    //     { name: "React.js", color: "rgba(97, 218, 251, 0.1)" },
     //     { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
     //     { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
     //     { name: "MongoDB", color: "rgba(77, 179, 61, 0.1)" },
@@ -110,7 +110,7 @@ export const Projects = () => {
     //   description:
     //     "A simple web based platform made with Node.js and MongoDB that enables you to learn langauges so that you can communicate easily and conviniently in several languages.",
     //   technologies: [
-    //     { name: "React", color: "rgba(97, 218, 251, 0.1)" },
+    //     { name: "React.js", color: "rgba(97, 218, 251, 0.1)" },
     //     { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
     //     { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
     //     { name: "MongoDB", color: "rgba(77, 179, 61, 0.1)" },
@@ -126,7 +126,7 @@ export const Projects = () => {
       description:
         "Product page demo that enables you to sort and filter the products as per your preferences. You can filter the products based on different fields like brand, color, etc.",
       technologies: [
-        { name: "React", color: "rgba(97, 218, 251, 0.1)" },
+        { name: "React.js", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Tailwind CSS", color: "rgba(15, 219, 255, 0.1)" },
       ],
     },
@@ -138,7 +138,7 @@ export const Projects = () => {
       description:
         "Simple page representing data fetching through an api with axios get request, it demonstrate the fetching of json and mapping the json array when the data is loaded.",
       technologies: [
-        { name: "React", color: "rgba(97, 218, 251, 0.1)" },
+        { name: "React.js", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Axios", color: "rgba(0, 122, 204, 0.1)" },
         { name: "Tailwind CSS", color: "rgba(15, 219, 255, 0.1)" },
       ],

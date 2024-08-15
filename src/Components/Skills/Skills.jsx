@@ -170,17 +170,17 @@ const Skills = () => {
         native mobile app development, particularly in Flutter.
       </div>
 
-      <div className="flex flex-wrap gap-3 justify-start mt-10">
+      <div className="flex flex-col md:grid grid-cols-3 gap-3 mt-10">
         {Object.keys(categorizedSkills).map((category, index) => (
           <div
             key={index}
-            className="bg-mobile md:bg-card p-5 md:p-6 w-full md:w-[23.5rem] rounded-md text-start text-white font-semibold border border-border"
+            className="bg-mobile md:bg-card p-5 md:p-6 min-w-full md:w-1/3 rounded-md text-start text-white font-semibold border border-border"
           >
             {category}
             <div className=" flex flex-wrap mt-4 gap-3">
               {categorizedSkills[category].map((skill) => (
                 <div
-                  className="text-xs  justify-start font-normal  h-fit px-3 rounded-sm"
+                  className="text-xs justify-start font-normal h-fit px-3 rounded-sm"
                   style={{
                     backgroundColor: skill.backgroundColor,
                     color:

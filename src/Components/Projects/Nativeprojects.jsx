@@ -58,7 +58,7 @@ export const NativeProjects = () => {
       technologies: [
         { name: "Flutter", color: "rgba(255, 102, 102, 0.1)" },
         { name: "Dart", color: "rgba(1, 117, 194, 0.1)" },
-        { name: "Flutter Bloc", color: "rgba(103, 78, 167, 0.1)" },
+        { name: "BLoC", color: "rgba(55, 134, 255, 0.1)" },
       ],
     },
     {
@@ -71,7 +71,7 @@ export const NativeProjects = () => {
       technologies: [
         { name: "Flutter", color: "rgba(255, 102, 102, 0.1)" },
         { name: "Dart", color: "rgba(1, 117, 194, 0.1)" },
-        { name: "Flutter Bloc", color: "rgba(103, 78, 167, 0.1)" },
+        { name: "BLoC", color: "rgba(55, 134, 255, 0.1)" },
         { name: "News API", color: "rgba(255, 105, 31, 0.1)" },
         { name: "Http", color: "rgba(0, 122, 204, 0.1)" },
       ],
@@ -134,9 +134,9 @@ export const NativeProjects = () => {
       animate={mainControls}
       transition={{ duration: 0.8, delay: 0.25 }}
     >
-      <div className="head w-full mx-auto text-3xl md:text-4xl font-bold text-white text-start md:px-5 px-3 mt-24">
+      <div className="head w-full mx-auto text-3xl md:text-4xl font-bold text-white text-start  mt-24">
         Native Projects ⚒️
-        <div className="sub md:w-[85%] w-full text-sm font-normal mt-5 text-text_light  opacity-60">
+        <div className="sub md:w-[85%] w-full text-sm font-normal mt-5 text-text_light  ">
           I showcase my proficiency in Flutter app development through a curated
           assortment of projects. With a primary emphasis on crafting intuitive
           user interfaces and ensuring cross-platform compatibility, each app

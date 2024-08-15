@@ -35,8 +35,8 @@ const About = () => {
       <div className="head w-full text-start text-3xl md:text-4xl font-bold text-white">
         Hi there !
       </div>
-      <div className="flex flex-col lg:flex-row justify-center items-start text-text_light mt-4 gap-10 ">
-        <div className="my-info font-normal text-sm w-full md:text-start mx-auto lg:[60%] opacity-70">
+      <div className="flex flex-col lg:flex-row justify-center items-start text-text_dark mt-4 gap-10 ">
+        <div className="my-info font-normal text-sm w-full md:text-start mx-auto lg:[60%] ">
           Passionate and hardworking{" "}
           <span className="text-main font-semibold opacity-100">
             #Web application developer🧑‍💻
@@ -64,38 +64,38 @@ const About = () => {
           a story of innovation 🌟 and continuous 🚀 learning, making myself
           better day-by-day.
         </div>
-        <div className="basic-details text-sm md:w-auto w-full flex flex-col justify-center md:items-start  gap-3 md:gap-2 ">
-          <div className="name flex justify-start gap-3 opacity-70">
+        <div className="basic-details text-sm md:w-auto w-full flex flex-col justify-center md:items-start gap-3 md:gap-2 ">
+          <div className="name flex justify-start gap-3 ">
             <span className="flex justify-start items-center md:gap-3 gap-2 font-semibold w-24">
-              <img className="w-4 h-4" src={name} alt="" />
+              <img className="w-4 h-4 opacity-60" src={name} alt="" />
               Name:
             </span>
             Sahil Satish Chavan
           </div>
-          <div className="dob flex justify-start gap-3 opacity-70">
+          <div className="dob flex justify-start gap-3 ">
             <span className="flex justify-start items-center md:gap-3 gap-2 font-semibold w-24">
-              <img className="w-4 h-4" src={dob} alt="" />
+              <img className="w-4 h-4 opacity-60" src={dob} alt="" />
               Dob:
             </span>{" "}
             30 04 2005
           </div>
-          <div className="address flex justify-start gap-3 opacity-70">
+          <div className="address flex justify-start gap-3 ">
             <span className="flex justify-start items-center md:gap-3 gap-2 font-semibold w-24">
-              <img className="w-4 h-4" src={add} alt="" />
+              <img className="w-4 h-4 opacity-60" src={add} alt="" />
               Address:
             </span>{" "}
             Roha, Raigad - India
           </div>
-          <div className="email flex justify-start items-center md:gap-3 gap-3 opacity-70">
+          <div className="email flex justify-start items-center md:gap-3 gap-3 ">
             <span className="flex justify-start items-center md:gap-3 gap-2 font-semibold w-24">
-              <img className="w-4 h-4" src={mail} alt="" />
+              <img className="w-4 h-4 opacity-60" src={mail} alt="" />
               Email:
             </span>
             sahilchavangithub@gmail.com
           </div>
-          <div className="phone flex justify-start gap-3 opacity-70">
+          <div className="phone flex justify-start gap-3 ">
             <span className="flex justify-start items-center md:gap-3 gap-2 font-semibold w-24">
-              <img className="w-4 h-4" src={phone} alt="" />
+              <img className="w-4 h-4 opacity-60" src={phone} alt="" />
               Phone:
             </span>{" "}
             +91 9922 341 223
@@ -105,7 +105,7 @@ const About = () => {
             download={"sahilchavanresume.pdf"}
             target="_blank"
             rel="noreferrer"
-            className="z-40"
+            className="z-30"
           >
             <button className="text-white btn-grad text-sm font-semibold w-28 p-2 mt-5">
               Resume

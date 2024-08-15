@@ -34,7 +34,7 @@ export const Projects = () => {
         { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
         { name: "Socket.io", color: "rgba(125, 125, 125, 0.1)" },
         { name: "Firebase", color: "rgba(255, 226, 10, 0.1)" },
-        { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
+        { name: "Tailwind CSS", color: "rgba(15, 219, 255, 0.1)" },
       ],
     },
     {
@@ -56,7 +56,7 @@ export const Projects = () => {
     {
       link: "https://github.com/sahil-gpm/newsfeed",
       name: "Newsfeed",
-      color: "#1e3a8a",
+      color: "#26408b",
       description:
         "Newsfeed is a API based application made with help of news api to fetch news according to your nationality and personal interested categories.",
       img: p3,
@@ -65,7 +65,7 @@ export const Projects = () => {
         { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
         { name: "News API", color: "rgba(255, 105, 31, 0.1)" },
         { name: "Firebase", color: "rgba(255, 226, 10, 0.1)" },
-        { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
+        { name: "Tailwind CSS", color: "rgba(15, 219, 255, 0.1)" },
         { name: "Axios", color: "rgba(0, 122, 204, 0.1)" },
       ],
     },
@@ -82,7 +82,7 @@ export const Projects = () => {
         { name: "Socket.io", color: "rgba(125, 125, 125, 0.1)" },
         { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
         { name: "MongoDB", color: "rgba(77, 179, 61, 0.1)" },
-        { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
+        { name: "Tailwind CSS", color: "rgba(15, 219, 255, 0.1)" },
       ],
       // "rgb" + (t.color.split(", 0.1")[0] + ")").split("rgba")[1],
     },
@@ -98,7 +98,7 @@ export const Projects = () => {
     //     { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
     //     { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
     //     { name: "MongoDB", color: "rgba(77, 179, 61, 0.1)" },
-    //     { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
+    //     { name: "Tailwind CSS", color: "rgba(15, 219, 255, 0.1)" },
     //     { name: "Axios", color: "rgba(0, 122, 204, 0.1)" },
     //   ],
     // },
@@ -114,7 +114,7 @@ export const Projects = () => {
     //     { name: "Node.js", color: "rgba(104, 160, 99, 0.1)" },
     //     { name: "Express", color: "rgba(255, 226, 10, 0.1)" },
     //     { name: "MongoDB", color: "rgba(77, 179, 61, 0.1)" },
-    //     { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
+    //     { name: "Tailwind CSS", color: "rgba(15, 219, 255, 0.1)" },
     //     { name: "Axios", color: "rgba(0, 122, 204, 0.1)" },
     //   ],
     // },
@@ -127,7 +127,7 @@ export const Projects = () => {
         "Product page demo that enables you to sort and filter the products as per your preferences. You can filter the products based on different fields like brand, color, etc.",
       technologies: [
         { name: "React", color: "rgba(97, 218, 251, 0.1)" },
-        { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
+        { name: "Tailwind CSS", color: "rgba(15, 219, 255, 0.1)" },
       ],
     },
     {
@@ -140,7 +140,7 @@ export const Projects = () => {
       technologies: [
         { name: "React", color: "rgba(97, 218, 251, 0.1)" },
         { name: "Axios", color: "rgba(0, 122, 204, 0.1)" },
-        { name: "Tailwind", color: "rgba(15, 219, 255, 0.1)" },
+        { name: "Tailwind CSS", color: "rgba(15, 219, 255, 0.1)" },
       ],
     },
   ];
@@ -154,12 +154,13 @@ export const Projects = () => {
         visible: { opacity: 1, y: 0 },
       }}
       initial="hidden"
+      id="projects"
       animate={mainControls}
       transition={{ duration: 0.8, delay: 0.25 }}
     >
       <div className="head w-full mx-auto text-3xl md:text-4xl font-bold text-white text-start  ">
         Web Projects ⚒️
-        <div className="sub text-sm font-normal mt-5 text-text_light opacity-60 md:w-[85%] w-full">
+        <div className="sub text-sm font-normal mt-5 text-text_light  md:w-[85%] w-full">
           I present a showcase of my passion for web development through a
           collection of innovative projects. With a keen eye for design and a
           commitment to functionality, each creation embodies my dedication to

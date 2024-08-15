@@ -10,7 +10,7 @@ const EducationComp = ({
   desc,
 }) => {
   return (
-    <div className="edu-details mt-5 w-full md:w-1/2 bg-card p-5 rounded-lg lg:rounded-2xl z-50">
+    <div className="edu-details mt-5 w-full md:w-1/2 bg-card p-5 rounded-lg z-30 border border-border">
       <div className="flex text-2xl items-center font-semibold">
         <img
           src={logoImg}
@@ -19,10 +19,10 @@ const EducationComp = ({
         />
         {title}
       </div>
-      <div className="text-text_light opacity-60 text-sm mt-4">{subTitle}</div>
-      <div className="edu-details-head text-sm font-normal text-text_light opacity-60 mt-1">
+      <div className="text-white text-sm mt-4">{subTitle}</div>
+      <div className="edu-details-head text-sm font-normal text-text_dark  mt-1">
         {join} to {end}, {grades}
-        <div className="text-text_light opacity-60 mt-3">{desc}</div>
+        <div className="text-text_dark mt-3">{desc}</div>
       </div>
     </div>
   );

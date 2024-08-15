@@ -28,7 +28,10 @@ const Education = () => {
       transition={{ duration: 0.8, delay: 0.15 }}
       className="mt-28 w-[90%] md:w-[80%] mx-auto overflow-hidden "
     >
-      <div className="head w-full text-start text-3xl md:text-4xl font-bold text-white">
+      <div
+        id="education"
+        className="head w-full text-start text-3xl md:text-4xl font-bold text-white"
+      >
         Education
         <div className="flex flex-col md:flex-row gap-2 md:gap-5 mt-5">
           <EducationComp
@@ -39,7 +42,7 @@ const Education = () => {
             title={"K.E.S V.P.T English Medium School Roha"}
             subTitle={"Maharashtra State Board"}
             desc={
-              "Completed my 10th with 99% from Konkan Education Society's Veena Pandit Tendulkar' English Medium School Roha Raigad."
+              "Completed my 10th with 99% from Konkan Education Society's Veena Pandit Tendulkar English Medium School Roha Raigad."
             }
           />
           <EducationComp

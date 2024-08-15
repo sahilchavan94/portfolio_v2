@@ -22,8 +22,8 @@ const Skills = () => {
         id: 4,
         skillname: "Tailwind CSS",
         proficiency: "Advanced",
-        backgroundColor: "rgba(56, 178, 172, 0.1)",
-      }, // Tailwind Teal
+        backgroundColor: "rgba(15, 219, 255, 0.1)",
+      }, // Tailwind CSS Teal
       {
         id: 5,
         skillname: "Bootstrap",
@@ -48,7 +48,7 @@ const Skills = () => {
         id: 7,
         skillname: "Node.js",
         proficiency: "Advanced",
-        backgroundColor: "rgba(51, 153, 51, 0.1)",
+        backgroundColor: "rgba(104, 160, 99, 0.1)",
       }, // Node.js Green
       {
         id: 13,
@@ -60,13 +60,13 @@ const Skills = () => {
         id: 14,
         skillname: "Socket.io",
         proficiency: "Intermediate",
-        backgroundColor: "rgba(255, 226, 10, 0.1)",
+        backgroundColor: "rgba(125, 125, 125, 0.1)",
       }, //
       {
         id: 8,
         skillname: "Firebase",
         proficiency: "Intermediate",
-        backgroundColor: "rgba(255, 202, 40, 0.1)",
+        backgroundColor: "rgba(255, 226, 10, 0.1)",
       }, //  Socket.io Black
     ],
     "Native App Technologies": [
@@ -74,7 +74,7 @@ const Skills = () => {
         id: 16,
         skillname: "Flutter",
         proficiency: "Advanced",
-        backgroundColor: "rgba(0, 180, 238, 0.1)",
+        backgroundColor: "rgba(255, 102, 102, 0.1)",
       }, //
       {
         id: 19,
@@ -102,7 +102,7 @@ const Skills = () => {
         id: 9,
         skillname: "MongoDB",
         proficiency: "Intermediate",
-        backgroundColor: "rgba(97, 160, 112, 0.1)",
+        backgroundColor: "rgba(77, 179, 61, 0.1)",
       }, // MongoDB Green
       {
         id: 10,
@@ -146,6 +146,7 @@ const Skills = () => {
 
   return (
     <motion.div
+      id="skills"
       className="mt-28 w-[90%] md:w-[80%] mx-auto overflow-hidden relative"
       ref={ref}
       variants={{
@@ -160,8 +161,8 @@ const Skills = () => {
         Arsenal ⚔️
       </div>
 
-      <div className="sub text-sm font-normal mt-5 text-text_light opacity-60 md:w-[85%] w-full ">
-        I present a comprehensive display of my diverse skill set in web and
+      <div className="sub text-sm font-normal mt-5 text-text_dark  md:w-[85%] w-full ">
+        Presenting a comprehensive display of my diverse skill set in web and
         mobile development. With expertise spanning across front-end and
         back-end technologies, including HTML, CSS, JavaScript, and various
         frameworks such as React, I ensure the creation of captivating and
@@ -173,7 +174,7 @@ const Skills = () => {
         {Object.keys(categorizedSkills).map((category, index) => (
           <div
             key={index}
-            className="bg-mobile md:bg-card p-5 md:p-6 w-full md:w-[23.5rem] rounded-lg lg:rounded-2xl text-start text-white font-semibold"
+            className="bg-mobile md:bg-card p-5 md:p-6 w-full md:w-[23.5rem] rounded-md text-start text-white font-semibold border border-border"
           >
             {category}
             <div className=" flex flex-wrap mt-4 gap-3">

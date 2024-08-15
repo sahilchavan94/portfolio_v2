@@ -14,12 +14,12 @@ const Intro = () => {
         <img
           src={blob1}
           alt=""
-          className="md:opacity-20 opacity-10 absolute -left-6 md:left-10 -top-[26rem] md:top-44 bg-trans"
+          className="opacity-20 absolute -left-6 md:left-10 -top-[26rem] md:top-44 bg-trans"
         />
         <img
           src={blob2}
           alt=""
-          className="opacity-30 absolute -right-[11%] md:-right-[80%] top-0 md:top-[40rem]"
+          className="opacity-40 absolute -right-[11%] md:-right-[80%] top-0 md:top-[40rem]"
         />
       </div>
       <div
@@ -47,7 +47,7 @@ const Intro = () => {
               <Typing />
             </div>
           </div>
-          <a href="#about " className="bg-white">
+          <a href="#about" className="bg-white">
             {" "}
             <button className="text-white btn-grad text-sm font-semibold w-32 p-2 mt-4 mx-auto md:mx-0">
               Let's dive in

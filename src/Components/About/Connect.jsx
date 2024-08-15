@@ -27,6 +27,7 @@ const Connect = () => {
 
   return (
     <motion.div
+      id="connect"
       className="connect mt-64 mb-20 w-full md:w-[65%] mx-auto text-start"
       ref={ref}
       variants={{
@@ -44,7 +45,7 @@ const Connect = () => {
       <div className="connections text-text_light text-xs md:text-sm flex md:flex-row items-center flex-col justify-center gap-4 mt-4">
         <Link to={"mailto:sahilchavangithub@gmail.com"}>
           <div
-            className="email rounded-lg bg-card w-72 h-44 flex flex-col gap-3 justify-center items-center mt-5 transition-all duration-500 hover:bg-gradient-to-tr from-pink via-purple to-card opacity-80"
+            className="email rounded-lg bg-card w-72 h-44 flex flex-col gap-3 justify-center border border-border items-center mt-5  hover:bg-gradient-to-tr transition-all duration-500 from-main via-purple to-card opacity-80"
             ref={cardRef}
             variants={{
               hidden: { opacity: 0, x: 50 },
@@ -60,7 +61,7 @@ const Connect = () => {
 
         <Link to={"tel:9922341223"}>
           <div
-            className="contact rounded-lg bg-card w-72 h-44 flex flex-col gap-3 justify-center items-center mt-5 transition-all duration-1000 hover:bg-gradient-to-tr from-pink via-purple to-card opacity-80"
+            className="contact rounded-lg border border-border bg-card w-72 h-44 flex flex-col gap-3 justify-center items-center mt-5 transition-all duration-1000 hover:bg-gradient-to-tr from-main via-purple to-card opacity-80"
             ref={cardRef}
             variants={{
               hidden: { opacity: 0, x: -50 },
@@ -129,7 +130,7 @@ const Connect = () => {
           />
         </Link>
       </div>
-      <div className="finish mt-20 mb-10 text-base text-center text-text_light font-normal opacity-30 transition-all duration-1000 hover:opacity-100">
+      <div className="finish mt-20 mb-10 text-sm text-center text-text_light font-normal opacity-30 transition-all duration-1000 hover:opacity-100">
         <Link to={"https://github.com/sahil-gpm/portfolio_v2"} target="_blank">
           sahilchavanportfolio@2.0 || 2024
         </Link>

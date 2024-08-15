@@ -172,7 +172,7 @@ export const Projects = () => {
           ingenuity behind each project.
         </div>
       </div>
-      <div className="projects flex flex-wrap gap-3 justify-start mt-10">
+      <div className="projects flex flex-wrap gap-3 justify-start items-center mt-10">
         {projectData.map((p) => {
           return (
             <Projectcomponent

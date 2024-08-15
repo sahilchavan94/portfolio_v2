@@ -69,7 +69,7 @@ const Home = () => {
         )}
 
         <motion.div
-          className={`fixed top-0 h-full w-full bg-gray-900 text-white bg-card border border-border z-40 p-6 flex flex-col items-start justify-between gap-y-4 transition-all duration-75 ${
+          className={`fixed z-50 top-0 h-screen w-full bg-gray-900 text-white bg-card border border-border  p-6 flex flex-col items-start justify-between gap-y-4 transition-all duration-75 ${
             isSidebarOpen ? "translate-y-0" : "-translate-y-full"
           }`}
           initial={{ y: "-100%" }}

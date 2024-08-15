@@ -33,7 +33,7 @@ const Education = () => {
         className="head w-full text-start text-3xl md:text-4xl font-bold text-white"
       >
         Education
-        <div className="flex flex-col md:flex-row gap-2 md:gap-5 mt-5">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-5 mt-4">
           <EducationComp
             join={"June 2005"}
             end={"July 2021"}

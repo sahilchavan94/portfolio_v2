@@ -71,7 +71,7 @@ const Connect = () => {
             animate={cardControls}
             transition={{ duration: 0.6, delay: 0.25 }}
           >
-            <img src={phone} className="w-7 h-7" alt="" /> +91 9922 341 223
+            <img src={phone} className="w-7 h-7 " alt="" /> +91 9922 341 223
           </div>
         </Link>
       </div>
@@ -91,12 +91,12 @@ const Connect = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ duration: 0.8, delay: 0.35 }}
-            className="w-10 h-10 backdr  backdrop-contrast-200-200"
+            className="w-10 h-10 brightness-125"
             src={fb}
             alt=""
           />
         </Link>
-        <Link target="_blank" to={"https://github.com/sahil-gpm/portfolio_v2"}>
+        <Link target="_blank" to={"https://github.com/sahilchavan94/"}>
           <motion.img
             ref={ref}
             variants={{
@@ -106,15 +106,12 @@ const Connect = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="w-10 h-10"
+            className="w-10 h-10 brightness-125"
             src={github}
             alt=""
           />
         </Link>
-        <Link
-          target="_blank"
-          to={"https://www.instagram.com/infinite_void_30/"}
-        >
+        <Link target="_blank" to={"https://www.instagram.com/eren_yeager_9405"}>
           <motion.img
             ref={ref}
             variants={{
@@ -124,7 +121,7 @@ const Connect = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="w-10 h-10"
+            className="w-10 h-10 brightness-125"
             src={ig}
             alt=""
           />

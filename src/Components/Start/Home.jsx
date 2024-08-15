@@ -69,7 +69,7 @@ const Home = () => {
         )}
 
         <motion.div
-          className={`fixed z-50 top-0 h-screen w-full bg-gray-900 text-white bg-card border border-border  p-6 flex flex-col items-start justify-between gap-y-4 transition-all duration-75 ${
+          className={`fixed z-50 top-0 h-screen w-full bg-gray-900 text-white bg-black  p-6 flex flex-col items-start justify-between gap-y-4 transition-all duration-75 ${
             isSidebarOpen ? "translate-y-0" : "-translate-y-full"
           }`}
           initial={{ y: "-100%" }}
@@ -80,7 +80,7 @@ const Home = () => {
               className="text-red self-start text-sm"
               onClick={() => setIsSidebarOpen(false)}
             >
-              Cancel
+              ← Go Back
             </button>
 
             <a
@@ -168,26 +168,26 @@ const Home = () => {
               <span className="text-sm text-text_dark hover">Connect</span>
             </a>
           </div>
-          <div className="text-sm text-text_dark opacity-60">
+          <div className="text-sm text-text_dark ">
             <div className="mx-auto flex flex-col mt-14 gap-5 mb-4">
               <Link
                 target="_blank"
                 to={"https://www.facebook.com/profile.php?id=61554470909104"}
               >
                 {" "}
-                <img className="w-7 h-7 brightness-200" src={fb} alt="" />
+                <img className="w-7 h-7 brightness-125" src={fb} alt="" />
               </Link>
               <Link
                 target="_blank"
                 to={"https://github.com/sahil-gpm/portfolio_v2"}
               >
-                <img className="w-7 h-7 brightness-200" src={github} alt="" />
+                <img className="w-7 h-7 brightness-125" src={github} alt="" />
               </Link>
               <Link
                 target="_blank"
                 to={"https://www.instagram.com/eren_yeager_9405/"}
               >
-                <img className="w-7 h-7 brightness-200" src={ig} alt="" />
+                <img className="w-7 h-7 brightness-125" src={ig} alt="" />
               </Link>
             </div>
           </div>
@@ -323,14 +323,21 @@ const Home = () => {
           </a>
         </motion.div>
       </div>
-      <Intro />
-      <About />
-      <Experience />
-      <Education />
-      <Skills />
-      <Projects />
-      <NativeProjects />
-      <Connect />
+
+      {!isSidebarOpen ? (
+        <div>
+          <Intro />
+          <About />
+          <Experience />
+          <Education />
+          <Skills />
+          <Projects />
+          <NativeProjects />
+          <Connect />
+        </div>
+      ) : (
+        <div className="w-screen h-screen bg-black"></div>
+      )}
     </div>
   );
 };
